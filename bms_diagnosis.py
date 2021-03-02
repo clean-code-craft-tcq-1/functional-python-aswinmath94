@@ -13,3 +13,4 @@ if __name__ == '__main__':
 
     assert (len(bms_health_is_ok({'temperature': 40, 'soc': 40, 'charging_rate': 0.6})) == 0)
     assert (len(bms_health_is_ok({'temperature': 100, 'soc': 40, 'charging_rate': 0.8})) > 0)
+    assert (len(bms_health_is_ok({'temperature': -5, 'soc': 40, 'charging_rate': 0.8})) > 0)
