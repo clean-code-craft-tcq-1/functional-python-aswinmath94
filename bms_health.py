@@ -8,7 +8,7 @@ def collect_anomalies(anomaly, bms_parameter, bms_parameter_value, bms_parameter
         anomaly.append([bms_parameter, 'OVER LIMIT'])
 
 
-def bms_health_is_ok(status_report):
+def bms_health_check(status_report):
     anomalies = []
     for bms_parameter in status_report:
         collect_anomalies(anomalies, bms_parameter, status_report[bms_parameter], bms_thresholds[bms_parameter])
