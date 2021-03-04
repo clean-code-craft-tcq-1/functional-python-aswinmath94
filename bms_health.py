@@ -20,4 +20,6 @@ def bms_breach_param(anomalies):
         print('All Parameters are OK')
     else:
         for parameter in anomalies:
-            print('BMS Operating in Unsafe Condition:{} -> {}'.format(parameter[0],parameter[1]))
+            unsafe_param_name = parameter[0]
+            unsafe_param_status = parameter[1
+            print('BMS Operating in Unsafe Condition:{} -> {}'.format(unsafe_param_name,unsafe_param_status))
