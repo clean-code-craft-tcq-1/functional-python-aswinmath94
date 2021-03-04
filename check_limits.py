@@ -1,4 +1,4 @@
-from bms_health import bms_health_is_ok
+from bms_health import bms_health_check
 from input_validator import bms_parameter_name_validation
 from input_validator import bms_parameter_value_validation
 
